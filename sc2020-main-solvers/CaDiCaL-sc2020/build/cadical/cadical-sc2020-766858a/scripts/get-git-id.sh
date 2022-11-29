@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "766858a4ec45751687f0b6f4d8ab9b2d332e97b0"

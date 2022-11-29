@@ -1,0 +1,11 @@
+prefix=/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/m4ri-20200125/myinstall
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: M4RI
+Description: Dense linear algebra over GF(2).
+Version: 20200125
+Requires: 
+Libs: -L${libdir} -lm4ri  -lm
+Cflags: -I${includedir}  -mmmx -msse -msse2 -msse3 

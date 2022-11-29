@@ -1,0 +1,5 @@
+#define VERSION "sc2020"
+#define COMPILER "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0 -W -Wall -O3 -DCOMPACT -DNEMBEDDED -DNDEBUG -DNMETRICS -DNOPTIONS -DQUIET -DNSTATISTICS"
+#define ID "039805f203ac24f204fd6ae0b3d6bae54332ee1e"
+#define BUILD "Fri Oct 28 13:34:29 IST 2022 Linux kalind-erts 5.15.0-52-generic x86_64"
+#define DIR "/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/Kissat-sc2020-default/build/kissat/build"

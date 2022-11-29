@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-stack-protector   -O2  -static    CMakeFiles/mytest.dir/test.cpp.o  -o ../mytest ../lib/libbreakid.a 

@@ -1,0 +1,67 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d111/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d111.dir/build.make CMakeFiles/cmTC_1d111.dir/build
+make[1]: Entering directory '/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d111.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1d111.dir/CheckSymbolExists.c.o   -c /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1d111
+/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cmake-3.12.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d111.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1d111.dir/CheckSymbolExists.c.o  -o cmTC_1d111 
+/usr/bin/ld: CMakeFiles/cmTC_1d111.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1d111.dir/build.make:87: cmTC_1d111] Error 1
+make[1]: Leaving directory '/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1d111/fast] Error 2
+
+File /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wno-bitfield-constant-conversion failed with the following output:
+Change Dir: /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_09204/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09204.dir/build.make CMakeFiles/cmTC_09204.dir/build
+make[1]: Entering directory '/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_09204.dir/src.cxx.o
+/usr/bin/c++    -fno-stack-protector -fvisibility=hidden -DHAVE_FLAG_-Wno-bitfield-constant-conversion   -Wno-bitfield-constant-conversion -o CMakeFiles/cmTC_09204.dir/src.cxx.o -c /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+cc1plus: warning: unrecognized command line option '-Wno-bitfield-constant-conversion'
+Linking CXX executable cmTC_09204
+/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cmake-3.12.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09204.dir/link.txt --verbose=1
+/usr/bin/c++   -fno-stack-protector -fvisibility=hidden -DHAVE_FLAG_-Wno-bitfield-constant-conversion    -O2 -Wl,--discard-all -Wl,--build-id=sha1 -static -Wl,--whole-archive -ldl -lpthread -Wl,--no-whole-archive -static   -rdynamic CMakeFiles/cmTC_09204.dir/src.cxx.o  -o cmTC_09204 
+make[1]: Leaving directory '/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wjump-misses-init failed with the following output:
+Change Dir: /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_88564/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88564.dir/build.make CMakeFiles/cmTC_88564.dir/build
+make[1]: Entering directory '/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88564.dir/src.cxx.o
+/usr/bin/c++    -fno-stack-protector -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -DHAVE_FLAG_-Wjump-misses-init   -Wjump-misses-init -o CMakeFiles/cmTC_88564.dir/src.cxx.o -c /home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option '-Wjump-misses-init' is valid for C/ObjC but not for C++
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_88564
+/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cmake-3.12.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88564.dir/link.txt --verbose=1
+/usr/bin/c++   -fno-stack-protector -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -DHAVE_FLAG_-Wjump-misses-init    -O2 -Wl,--discard-all -Wl,--build-id=sha1 -static -Wl,--whole-archive -ldl -lpthread -Wl,--no-whole-archive -static   -rdynamic CMakeFiles/cmTC_88564.dir/src.cxx.o  -o cmTC_88564 
+make[1]: Leaving directory '/home/kalind/Documents/GitHub/CS773_Comp_Arch_Perf_Sec/course_content/project/sc2020-main-solvers/cryptominisat-ccnr/cms/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
