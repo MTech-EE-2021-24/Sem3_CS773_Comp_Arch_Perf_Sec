@@ -84,13 +84,13 @@ Welcome to this project repository!
 
 1. Trace files are generated using Intel's PIN tool by skipping **2 billion** instructions (this value is randomly chosen) and generating trace for next **250 million** instructions (again this value is randomly chosen). These files are present in the directory `random_pin_traces` on the CSE server, details are as below:
 
-   IP address: `10.129.6.178`
+   IP address: `10.129.6.177`
 
    Username: `kalind`
 
    Password: `kalind123`
 
-   Project root directory: `/home/kalind/Documents/cs773-project`
+   Project root directory: `/home/kalind/cs773-project`
 
 2. These trace files were simulated using ChampSim for **50 million** instructions after warmup of **50 million** instructions. The branch predictor used here is default: `bimodal`.
 
@@ -121,6 +121,8 @@ Welcome to this project repository!
 
    This will install the `valgrind` tool to the default path of `/usr/local/bin/valgrind`. If you wish to install it else where then run `./configure --prefix=/where/you/want/it/installed`.
 
+   On the server, Valgrind tool is installed in the directory: `/home/kalind/cs773-project-downloads/valgrind-install`. This path is added to the environment variables in `.bashrc` file.
+
 5. Now generate the BBV output file for a pair of SAT solver and benchmark instance. For example, run the command as shown below:
 
    ```sh
@@ -135,7 +137,7 @@ Welcome to this project repository!
 
 6. Next is to download and build **SimPoint 3.2** tool. Download the source code from this [link](https://cseweb.ucsd.edu/~calder/simpoint/releases/SimPoint.3.2.tar.gz). The original source code won't be compiled directly due to some in-compatibilty of source code with the new version of gcc.
 
-7. The directory with SimPoint executable after resolving the errors is present on the server at this path: `/home/kalind/Downloads/SimPoint.3.2/bin/simpoint`.
+7. The directory with SimPoint executable after resolving the errors is present on the server at this path: `/home/kalind/cs773-project-downloads/SimPoint.3.2/bin/simpoint`.
 
 8. Generate the `.simpoints` and `.weights` file for a pair of SAT solver and benchmark instance using the command below.
 
@@ -151,7 +153,7 @@ Welcome to this project repository!
    >
    > For some pairs of SAT solver and benchmark instance, I had to generate simpoints with `maxK` as `60` or `120` as the number of clusters were very close to 30 or 60.
 
-   The simpoint and weight files for each of the 12 combinations are generated and present at the `/home/kalind/Documents/cs773-project/simpoint_results` directory.
+   The simpoint and weight files for each of the 12 combinations are generated and present at the `/home/kalind/cs773-project/simpoint_results` directory.
 
 <br>
 
@@ -163,8 +165,8 @@ Welcome to this project repository!
 
 2. The above process is automated by running the script `generate-simpoint-traces.py` located in the `scripts` directory. Make sure to define environment variables:
 
-   - `$PIN_ROOT` - set to Pin tool installation directory (set to `/home/kalind/Downloads/pin-3.17-98314-g0c048d619-gcc-linux `on the server)
-   - `$CHAMPSIM_ROOT` - set to the root of ChampSim directory (set to `/home/kalind/Documents/ChampSim` on the server)
+   - `$PIN_ROOT` - set to Pin tool installation directory (set to `/$HOME/cs773-project-downloads/pin-3.17-98314-g0c048d619-gcc-linux` on the server)
+   - `$CHAMPSIM_ROOT` - set to the root of ChampSim directory (set to `$HOME/cs773-project-downloads/ChampSim` on the server)
 
    Then run the script as below from the `scripts` directory:
 
